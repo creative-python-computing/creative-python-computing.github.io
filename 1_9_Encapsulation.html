@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<title>1.9 Encapsulation</title>
+</head>
+
+<body>
+<h1>1.9 Encapsulation</h1>
+	<p><strong>Encapsulation</strong> is a process in which several related actions are grouped and given a name. It is a tool that helps us break up tasks and temporarily hide detail, thus enabling effective abstraction. Without good encapsulation, it can be hard to grasp the high-level structure of an algorithm without getting lost in the details. For example, consider the following algorithm for making lunch:</p>
+	<p><img src="Images/MakeLunch.jpg" width="999" height="408" alt=""/></p>
+	<p>It should be apparent that the first several actions in this algorithm come directly from the MakeRamen algorithm that we’ve seen before. Furthermore, the steps after making the ramen, while important to a delicious and low-cost student lunch, have nothing to do with making ramen. In other words, there is a natural break between high-level concepts in this algorithm. Employing encapsulation would allow us to see the overall organization of this lunch-making algorithm much
+more clearly, as follows:</p>
+	<p><img src="Images/MakeLunch_encaps.jpg" width="999" height="162" alt=""/></p>
+	<p>It is not accidental that we’ve always given names to all of our sample algorithms so far. Now we can use that name to refer to the entire algorithm: we can think of the MakeLunch algorithm as consisting of three other encapsulated algorithms. The first of these is the MakeRamen algorithm that we’ve seen many times. The PourMilk algorithm is constructed simply by taking the details from our original MakeLunch algorithm and encapsulating them with a unique name.</p>
+<p><img src="Images/PourMilk.jpg" width="999" height="235" alt=""/></p>
+	<p>Encapsulation can be useful when writing algorithms of any length, but it’s especially crucial for computer programs. Large-scale software can consist of thousands or even millions of lines of code. There’s no way anybody could make sense of it all if the code wasn’t encapsulated to break it up into manageable chunks.</p>
+<br>
+	<div>
+	  <a href="Refining_Pseudocode.html" class="previous">&laquo; Previous</a>
+		<a href ="index.html" class="home">Home</a>
+	  <a href="Encapsulating_Pseudocode.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>3.3.6 Functions That Accept Arguments</title>
+</head>
+
+<body>
+	<h1>3.3.6 Functions That Accept Arguments</h1>
+	<p>As we mentioned in Chapter 1, useful <a href="../01/1_10_Input_and_Output.html">algorithms usually have inputs</a>; the same is true of functions. In the function header, we can specify the inputs that the function needs to do its job. When defining a function header, we call these inputs <strong>parameters</strong>.<br>
+    For example, suppose you were writing a program in Processing, and you knew you were going to draw a lot of circles on the screen. We already know we can use the ellipse() function to do this, but ellipse() takes four arguments, and that’s a lot of typing. We’ll write a function that only draws circles to make things more convenient for us.</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/d5fa17b841" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>In addition to the def keyword and the name of the function, you can see that we now have something inside the parentheses of the function header, namely, x and y separated by a comma. This example shows that whenever you call the function, you’ll need to give it two arguments and that whatever the value of those arguments, the function is going to refer to the first argument as x and refer to the second argument as y. In other words, the function is going to give names to any inputs that you give it. It has to do this, after all, because the function doesn’t know in advance the values of the arguments it will be given. Ideally, programmers will choose names that should make the purpose of the parameters clear. <br>
+	The function body here consists of just one line of code, where the x and y parameters are passed along as inputs to the ellipse() function that we saw in Chapter 2.<br>
+	Once we’ve defined our circle() function, we can call it multiple times to draw circles on the screen. The following code will draw three circles in a single column by using function calls to circle().
+	</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/5865884ea1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<br>
+	<div>
+	  <a href="Practice_3_1.html" class="previous">&laquo; Previous</a>
+		<a href ="../index.html" class="home">Home</a>
+	  <a href="3_3_7_Arguments_Vs_Parameters.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

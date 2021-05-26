@@ -2,22 +2,22 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="../stylesheet.css">
 <title>1.8 Refinement</title>
 </head>
 
 <body>
 <h1>1.8 Refinement</h1>
 <p><strong>Refinement</strong> is the process of adding more details to an algorithm; it is the inverse process of abstraction. For example, we might refine the boil water action by replacing it with a sequence of actions (shown in red text) that describe how to boil water in more detail:</p>
-<p><img src="Images/MakeRamen_refine.jpg" width="999" height="408" alt=""/></p>
+<p><img src="../01_Images/MakeRamen_refine.jpg" width="999" height="408" alt=""/></p>
 <p>Each of these new actions describes an action that partially carries out the first “boil water” action. But, depending on the sophistication of our cooking robot, the actions may not be detailed: the robot needs precise directions for where and how to position its legs and arms to complete the task. This would require that we further refine the actions “place pot under faucet”, “add water” to pot, etc. to the level of detail where we tell the robot exactly where and how to move its limbs by replacing each of these actions with sequences of even more detailed actions. This is called <strong>stepwise refinement</strong>. We repeatedly replace actions that are too abstract with a sequence of less abstract, more detailed actions until we reach a level of detail such that the actions are both feasible and self-explanatory for the algorithm’s audience (in this case, our cooking robot).</p>
-<p><img src="Images/Robot_chef.jpg" width="3501" height="2356" alt=""/></p>
+<p><img src="../01_Images/Robot_chef.jpg" width="3501" height="2356" alt=""/></p>
 <div>“Robot Chef”, Sam Howzit (Sam Howzit) [CC BY (<a href="https://creativecommons.org/licenses/by/2.0">https://creativecommons.org/licenses/by/2.0</a>)]</div>
 <p>The ability to think at different levels of abstraction and move between them is critical to success as a programmer and a computer scientist. We abstract away details when they are not necessary, and refine abstractions later when we are ready for the details. It’s not a natural skill, and it takes practice.</p>
 <br>
 	<div>
 	  <a href="1_7_Abstraction.html" class="previous">&laquo; Previous</a>
-		<a href ="index.html" class="home">Home</a>
+		<a href ="../index.html" class="home">Home</a>
 	  <a href="Refining_Pseudocode.html" class="next">Next &raquo;</a>
 	</div>
 </body>

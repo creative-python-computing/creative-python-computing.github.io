@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>7.1.1 Variable Names</title>
+</head>
+
+<body>
+	<h1>7.1.1 Variable Names</h1>
+	<p>The essence of variables is assigning symbolic names to data. The names can be almost anything,<br>
+	  but there are a few naming rules we have to follow. Variable names (also called identifiers) in Python have to follow these constraints:</p>
+	<ul>
+	  <li>may contain letters or digits, but cannot start with a digit;</li>
+	  <li>may contain underscore (_) characters and may start with an underscore; and</li>
+	  <li>may not contain spaces or other special characters.</li>
+</ul>
+	<p>Thus, KyloRen, IG88, and luke_Skywalker are valid variable names, but these are not: Luke+Leia_4_Evar (contains the special character +), 2ManyStormTroopers (starts with a digit), and 		Han Shot First (contains blank spaces).<br>
+	    Additionally, Python keywords (like the def keyword for defining functions) cannot be used as variable names. Function names, on the other hand, can be used as variable names. So even though Processing has a function called line(), we could also make a variable named line as well, and the two would have nothing to do with each other.<br>
+		As long as we follow the rules above, the computer doesn’t care how we name our variables. But humans who read your computer code certainly care! In general, you should strive to choose variable names that indicate how the variable will be used. For example, the Processing authors could have selected the variable name cookie_crumb instead of mouseX, but that would have been a poor choice. After all, the variable mouseX has absolutely nothing to do with cookies and everything to do with the x-coordinate of the mouse! It might seem obvious, but it’s not at all uncommon for novice programmers to figure out that they’re going to need five variables in their program, so they name those variables a, b, c, d, and e. Don’t do this! If you can’t come up with a better naming scheme for your variables than an alphabetical listing, it means you haven’t sufficiently understood the algorithm you are trying to code. Spend the time to understand the algorithm first, then worry about trying to code it in Python.</p>
+	<br>
+	<div>
+	  <a href="7_1_Variables.html" class="previous">&laquo; Previous</a>
+		<a href ="../index.html" class="home">Home</a>
+	  <a href="comprehension_questions.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

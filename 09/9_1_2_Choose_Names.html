@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>9.1.2 How to Choose Names</title>
+</head>
+
+<body>
+	<h1>9.1.2 How to Choose Names</h1>
+	<p>The best way to name your objects in Python is to use descriptive names to make it clear what the object represents.<br>
+	  When naming variables, you may be tempted to choose simple, single-letter lowercase names, like x. But, unless you’re using x as the argument of a mathematical function, it’s not clear what x represents. Imagine you are storing a person’s name as a string, and you want to use string slicing to format their name differently. You could end up with something like this:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/1181bef2f7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>It seems natural to use the variables that we are used to in formulas, but we have to be careful to avoid l, O, and I. For example:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/a8a8d98190" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>Both of the above example run the same but the second one is easier for a human to detect what the variables are.<br>
+		Consider the following function that calculates area of a rectangle:
+	</p>
+<div>
+<iframe src="https://trinket.io/embed/python/4a6be2a819" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>ar is not a very descriptive function name. Here's a better way:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/e0a2a76fad" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Even though I abbreviated rectangle to rect, area_rect gives me a better idea of what the function does than ar.</p>
+	<br>
+	<div>
+	  <a href="9_1_1_Naming_Styles.html" class="previous">&laquo; Previous</a>
+		<a href ="../index.html" class="home">Home</a>
+	  <a href="9_2_Code_Layout.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

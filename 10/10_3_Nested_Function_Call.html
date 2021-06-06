@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>10.3 Nested Function Calls</title>
+</head>
+
+<body>
+	<h1>10.3 Nested Function Call</h1>
+	<p>There is no limit to the number of function definitions you can have in one program. If functions are only called after they are defined, there’s no limit to where or how many times a function can be called. The consequence of this is that we can define some function A() and then define some function B() which, as part of its function body, includes a function call to A(). We could even then define a function C(), which makes function calls to both A() and B() - even though B() itself includes a function call to A()!! All of this is perfectly fine from the computer’s perspective. The only thing that might make it tricky for English-speakers to follow is that we’re used to reading text top-down and left-to-right, but that won’t be the order in which the statements in our computer programs are executed once we start using multiple function calls.<br>
+	Let’s illustrate this process through an example. Can you predict what will happen?
+	</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/b8b5cca413" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>The only statements in this program that do anything visible are the function calls to print(),
+which just print the given text to the console one line at a time. Let’s unroll this program and look at
+the order in which the print statements will happen when the program is run.<br>
+The first thing that happens is a function call to C(), so we take a look at C()’s function body
+and start executing the statements there one at a time. There is print('C') in the first line so that a C will
+appear on the console. The following line is a function call to A(), so the computer will look at
+A()’s function body. There's only one statement there, print(‘A’), so that’s the next thing that
+will happen. After that, A()’s function body is finished, so we return to the middle of C()’s function
+body, since that's where A() is called. Next is a function call to B(). The first statement in B() is
+print(‘B’), so that happens next, followed by a function call to A(). As before, A() has only one
+statement, so print(‘A’) is executed at this point. Then A() is finished, so we return to where
+A() is called. B() doesn’t do anything else after calling A(), so we return to where B() is called
+first in C()’s function body. C() doesn’t do anything either after calling B(), so we return to where
+C() is called. There are no more lines of code after the function call to C(), so the program is
+finished.<br>
+How could you change the above code so it prints<br>
+		B<br>
+		A<br>
+		A<br>
+		C<br>
+	</p>
+<br>
+	<div>
+	  <a href="Practice_3.html" class="previous">&laquo; Previous</a>
+		<a href ="../index.html" class="home">Home</a>
+	  <a href="key_terms.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

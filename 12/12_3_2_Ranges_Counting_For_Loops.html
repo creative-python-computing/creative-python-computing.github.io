@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>12.3.2 Ranges and Counting For-Loops</title>
+</head>
+
+<body>
+<h1>12.3.2 Ranges and Counting For-Loops</h1>
+<p>We can use for-loops to create counting loops just like we did with while-loops. To do so, we first need to learn about a new kind of sequence called a <strong>range</strong>.<br>
+A <strong>range</strong> is a sequence of integers that begins at an integer a (the start), ends before an integer b
+(the stop), and the difference between each element in the sequence, called the step size, is equal.
+For example, the range starts at 1, stops at 5 and has a step size of 1 is comprised of the sequence of
+integers 1, 2, 3, 4. Ranges are created with Python’s built-in range() function. The range
+function requires two arguments, start and stop, and can optionally accept a third argument for the
+step size, which, if not given, defaults to 1. You may also provide just a single argument to range;
+range(x) is equivalent to range(0, x, 1), and is the sequence 0, 1, 2,..., x - 1. Here are some
+example ranges:</p>
+<p><img src="../12_Images/range.jpg" width="691" height="216" alt=""/></p>
+<p>Remember: the value stop is not part of the sequence.<br>
+Ranges can be used to write counting for-loops. Here is a for-loop that repeats its block exactly
+N times:</p>
+<p><img src="../12_Images/for_loop_range.jpg" width="691" height="79" alt=""/></p>
+<p>In the above loop, i refers to the value 0 on the first repetition, 1 on the second repetition, and so on, up
+to N-1 on the last repetition. It is equivalent to the following while-loop:</p>
+<p><img src="../12_Images/eq_while_loop.jpg" width="691" height="111" alt=""/></p>
+<p>For example:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/615ddc9be8" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<iframe src="https://trinket.io/embed/python/3a49548bd7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<br>
+	<div>
+	  <a href="12_3_1_Sequences.html" class="previous">&laquo; Previous</a>
+		<a href ="../index.html" class="home">Home</a>
+	  <a href="12_4_Right_Kind_of_Loop.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

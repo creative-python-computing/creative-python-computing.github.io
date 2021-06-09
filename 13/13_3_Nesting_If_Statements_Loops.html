@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>13.3 Nesting If-Statements and Loops</title>
+</head>
+
+<body>
+	<h1>13.3 Nesting If-Statements and Loops</h1>
+	<p>We can combine any number of if-statements and loops in any order that we like. Consider the
+following program, which prints out appropriately timed messages for a rocket lift-off:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/68cc7d0b41" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>For each iteration of the for-loop, the countdown variable refers to a different value (starts at 10 and
+counts down to 1). No matter what its value, countdown is printed to the console with each iteration.
+Then, depending on the value that countdown has for a particular iteration, an additional message
+maybe printed as well.<br>
+In this next example, we have two different loops under two different branches of a conditional
+statement:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/d5d7b10369" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Here, because we used an if/else structure, the program will execute only one of the two loops. If
+the count_up variable is True, the program will print Counting up and display the numbers from
+1 to 10 in ascending order. If instead count_up is False, the upward-counting block won’t even be
+examined, and instead, the program will print Counting down! and display the numbers from 10 to
+1 in descending order.</p>
+<br>
+	<div>
+	  <a href="13_2_Nesting_Loops.html" class="previous">&laquo; Previous</a>
+		<a href ="../index.html" class="home">Home</a>
+	  <a href="13_4_Multiple_Layers_Nesting.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

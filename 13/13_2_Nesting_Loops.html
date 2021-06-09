@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>13.2 Nesting Loops</title>
+</head>
+
+<body>
+	<h1>13.2 Nesting Loops</h1>
+	<p>Loops that contain other loops are a common and valuable tool in computer science. The key thing
+to keep in mind here is that any loop(s) on the inside of another loop will execute entirely for every
+single iteration of the ‘outer’ loop!<br>
+Let’s consider an example. Suppose we want to print out all pairs of 26 letters in the English
+alphabet, i.e. (aa, ab, ac...az, ba, bb, bc. zy, zz). If we manually write out every pairing’s print()
+statement, we would need 26<sup>2</sup> = 676 print() statements. We don’t want to do that! Using nested
+		loops, we can get the job done in just a few lines of code:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/014d2dc118" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>We know from the length of the alphabet string that the first (outer) for-loop will execute precisely
+26 times. During the first iteration of the loop, letter1 will be set to a. Then, we enter the second
+(inner) for-loop and iterate through it. The variable letter2 will also cycle through all 26 letters
+of alphabet. For each letter2, we concatenate it together with letter1 and print the resulting
+string to the console. So letter1 doesn't change because it all happens during the first iteration of the
+outer loop! Once the inner loop finishes its 26 iterations, we hit the end of the outer loop for the
+first time, at which point letter1 becomes b for the next iteration. The entire inner loop will
+repeat, with the only difference being that letter1 is now b instead of a. The inner loop will
+continue to repeat its iterations until the outer loop completes cycling through its iteration of
+alphabet’s characters.</p>
+<br>
+	<div>
+	  <a href="13_1_Nesting_If_Statements.html" class="previous">&laquo; Previous</a>
+		<a href ="../index.html" class="home">Home</a>
+	  <a href="13_3_Nesting_If_Statements_Loops.html" class="next">Next &raquo;</a>
+	</div>
+</body>
+</html>

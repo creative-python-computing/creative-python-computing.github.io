@@ -13,16 +13,16 @@ can think of them as the Boolean equivalent to arithmetic operators, like additi
 The three logical operators are and, or, and not. Notice that these operators are just English words
 and not special symbols of any kind, this isn't true in all programming languages, but it is true in
 Python. We can use logical operators to combine Boolean values to get new Boolean values, just
-like arithmetic operators let us combine numbers to get new numbers.<br>
-All logical operators have lower precedence than relational operators. So that means that
-logical operators always get evaluated after relational operators.</p>
+like arithmetic operators let us combine numbers to get new numbers.</p>
+	<p>All logical operators have lower precedence than relational operators. So that means that
+	  logical operators always get evaluated after relational operators.</p>
 <h2>The and Operator</h2>
 	<p>The expression x and y have a value of True only if both x and y are True. In all other cases, such an
 expression has a value of False. Remember that x and y could be Boolean literals, Boolean values,
 Boolean expressions, or even a function call that returns a Boolean value. Here are some examples:</p>
 	<p><img src="../11_Images/and.jpg" width="579" height="132" alt=""/></p>
-	<p>Note the order of operations in the first example. The subtraction happens first because it has higher precedence than all relational and logical operators. Then the two greater-than operators are evaluated because relational operators have higher priority than logical operators. The last thing that happens is the and operator. Since both &gt; operators result is False, the entire expression is False.<br>
-    In the last example, the two and operators are evaluated left-to-right (recall that len() returns the length of a string). So, the first and is True, which becomes the first operand to the second and, then True and ’Ren’ &lt; ’Rey’ evaluates to True, so the whole expression evaluates to True.</p>
+	<p>Note the order of operations in the first example. The subtraction happens first because it has higher precedence than all relational and logical operators. Then the two greater-than operators are evaluated because relational operators have higher priority than logical operators. The last thing that happens is the and operator. Since both &gt; operators result is False, the entire expression is False.</p>
+	<p>In the last example, the two and operators are evaluated left-to-right (recall that len() returns the length of a string). So, the first and is True, which becomes the first operand to the second and, then True and ’Ren’ &lt; ’Rey’ evaluates to True, so the whole expression evaluates to True.</p>
 <h2>The or Operator</h2>
 	<p>
 	  The expression x or y has a value of False only if both x and y are False. In all other cases, such
@@ -38,8 +38,8 @@ of its operand to the other Boolean value. Here are some examples:</p>
     </h2>
 	<p>We don’t want you to get the idea that you can only use one kind of logical operator per expression. You can mix them up as much as you like, but take care — the logical operators do not have the same precedence! The operator does not have higher precedence than and which, in turn, has higher precedence than or. Look at these expressions:</p>
 	<p><img src="../11_Images/mixed.jpg" width="579" height="132" alt=""/></p>
-	<p>You might expect the first expression to have a False value because 5 &lt; 7 or 0 == 0 is True, and the not would change that to False. But the not operator has higher precedence than or. In this expression, the relational operators evaluate first, giving us not True or True. Now the not is applied to the first True, giving us False or True, which ends up True. If we want to apply not to the result of the or, we must add parentheses, like in the second example. The relational operators still evaluate first, again giving us not (True or True). But now, because of the parentheses, the or evaluates next, which provides us with not True, and ultimately False.<br>
-	  Note how in the third and fourth examples if we want the or to evaluate before the and we have to use parentheses around the or expression. You can see that it matters because we get different answers depending on which of or or and evaluates first.</p>
+	<p>You might expect the first expression to have a False value because 5 &lt; 7 or 0 == 0 is True, and the not would change that to False. But the not operator has higher precedence than or. In this expression, the relational operators evaluate first, giving us not True or True. Now the not is applied to the first True, giving us False or True, which ends up True. If we want to apply not to the result of the or, we must add parentheses, like in the second example. The relational operators still evaluate first, again giving us not (True or True). But now, because of the parentheses, the or evaluates next, which provides us with not True, and ultimately False.</p>
+	<p>Note how in the third and fourth examples if we want the or to evaluate before the and we have to use parentheses around the or expression. You can see that it matters because we get different answers depending on which of or or and evaluates first.</p>
 	<h2>Variables in Relational and Logical Expressions</h2>
 	<p>
 	  We also don’t want you to get the idea that you can’t use variables with these operators. In fact, in practice, the most useful expressions will involve variables. There's no point in writing a program that contains an expression for which you, the programmer, already know the value ahead of time because you could just substitute that value for the whole expression yourself! In the above examples where a literal appears in an expression, we could replace the literal with a variable—for example, a &lt; b and c &lt; d is valid. We can't evaluate this expression without knowing the values of the variables. Here’s a complete example where we associate the variable names with values and use them in a Boolean expression:</p>

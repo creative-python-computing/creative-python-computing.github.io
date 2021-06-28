@@ -16,25 +16,25 @@
 </div>
 	<p>The only statements in this program that do anything visible are the function calls to print(),
 which just print the given text to the console one line at a time. Let’s unroll this program and look at
-the order in which the print statements will happen when the program is run.<br>
-The first thing that happens is a function call to C(), so we take a look at C()’s function body
-and start executing the statements there one at a time. There is print('C') in the first line so that a C will
-appear on the console. The following line is a function call to A(), so the computer will look at
-A()’s function body. There's only one statement there, print(‘A’), so that’s the next thing that
-will happen. After that, A()’s function body is finished, so we return to the middle of C()’s function
-body, since that's where A() is called. Next is a function call to B(). The first statement in B() is
-print(‘B’), so that happens next, followed by a function call to A(). As before, A() has only one
-statement, so print(‘A’) is executed at this point. Then A() is finished, so we return to where
-A() is called. B() doesn’t do anything else after calling A(), so we return to where B() is called
-first in C()’s function body. C() doesn’t do anything either after calling B(), so we return to where
-C() is called. There are no more lines of code after the function call to C(), so the program is
-finished.<br>
-How could you change the above code so it prints<br>
-		B<br>
-		A<br>
-		A<br>
-		C<br>
-	</p>
+the order in which the print statements will happen when the program is run.</p>
+	<p>The first thing that happens is a function call to C(), so we take a look at C()’s function body
+	  and start executing the statements there one at a time. There is print('C') in the first line so that a C will
+	  appear on the console. The following line is a function call to A(), so the computer will look at
+	  A()’s function body. There's only one statement there, print(‘A’), so that’s the next thing that
+	  will happen. After that, A()’s function body is finished, so we return to the middle of C()’s function
+	  body, since that's where A() is called. Next is a function call to B(). The first statement in B() is
+	  print(‘B’), so that happens next, followed by a function call to A(). As before, A() has only one
+	  statement, so print(‘A’) is executed at this point. Then A() is finished, so we return to where
+	  A() is called. B() doesn’t do anything else after calling A(), so we return to where B() is called
+	  first in C()’s function body. C() doesn’t do anything either after calling B(), so we return to where
+	  C() is called. There are no more lines of code after the function call to C(), so the program is
+finished.</p>
+	<p>How could you change the above code so it prints<br>
+	  B<br>
+	  A<br>
+	  A<br>
+	  C<br>
+    </p>
 <br>
 	<div>
 	  <a href="Practice_3.html" class="previous">&laquo; Previous</a>

@@ -66,6 +66,11 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+.borderexample {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
 table{table-layout: auto;
 	  width: 100%;}
 @media only screen and (min-width: 700px) {

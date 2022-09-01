@@ -79,7 +79,8 @@ table{table-layout: auto;
 div {text-align: center;}
 h1 {text-align: center;}
 img{max-width: 100%;
-	height: auto;}
+	height: auto;
+    white-space:pre;}
 p {font-family: Arial, Helvetica, sans-serif;}
 td {font-family: Arial, Helvetica, sans-serif;}
 li {font-family: Arial, Helvetica, sans-serif;}

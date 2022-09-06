@@ -66,6 +66,11 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+.borderexample {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
 table{table-layout: auto;
 	  width: 100%;}
 @media only screen and (min-width: 700px) {
@@ -79,7 +84,8 @@ table{table-layout: auto;
 div {text-align: center;}
 h1 {text-align: center;}
 img{max-width: 100%;
-	height: auto;}
+	height: auto;
+    white-space:pre;}
 p {font-family: Arial, Helvetica, sans-serif;}
 td {font-family: Arial, Helvetica, sans-serif;}
 li {font-family: Arial, Helvetica, sans-serif;}

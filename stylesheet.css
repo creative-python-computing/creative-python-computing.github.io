@@ -87,6 +87,6 @@ img{max-width: 100%;
 	height: auto;
     white-space:pre;}
 p {font-family: Arial, Helvetica, sans-serif;}
-td {font-family: Arial, Helvetica, sans-serif;}
+td {font-family: Arial, Helvetica, sans-serif; vertical-align: top;}
 li {font-family: Arial, Helvetica, sans-serif;}
 blockquote {font-family: Arial, Helvetica, sans-serif;}
